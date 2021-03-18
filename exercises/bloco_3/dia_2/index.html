@@ -7,9 +7,22 @@
     <title>Introdução HTML e CSS</title>
 
     <style>
+        body{
+            font-size: 16px;
+            font-style: italic;
+            line-height: normal;
+            text-align: center;
+        }
+
         h1 {
             font-size: 64px;
             color: orange;
+            font-family: sans-serif;
+        }
+
+        p {
+            font-weight: 600;
+            font-size: 3em;
         }
 
         ul {
@@ -20,15 +33,27 @@
             background-color: plum;
         }
 
+        .verde {
+            background-color: green;
+        }
+
+        .amarelo {
+            background-color: yellow;
+        }
+
+        .azul {
+            background-color: blue;
+        }
+
     </style>
 </head>
 <body>
     <h1>Exercício 3.2</h1>
     <p class="fundo" >Qual é a sua cor favorita?</p>
     <ul class="fundo" >
-        <li>Verde</li>
-        <li>Amarelo</li>
-        <li>Azul</li>
+        <li class="verde" >Verde</li>
+        <li class="amarelo" >Amarelo</li>
+        <li class="azul" >Azul</li>
     </ul>
     
 </body>
