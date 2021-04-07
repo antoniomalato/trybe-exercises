@@ -57,11 +57,26 @@ for (let index = 0; index < 10; index += 1) {
     item.innerText = index;
     lista.appendChild(item)
 }
-
 div4.appendChild(lista);
 
+//passo 9
 for (let index = 0; index < 3; index +=1) {
     let h3 = document.createElement('h3');
+    h3.innerHTML = 'teste'+ " " + index;
+    h3.className = 'description';
     div.appendChild(h3);
+    
+    console.log(h3)
 
 } 
+
+// Passo 1 
+
+const title = document.getElementsByClassName('h1')[0];
+title.className = 'title';
+
+
+// Passo 3
+
+const removerDiv = document.getElementsByClassName('left-content')[0];
+div.removeChild(removerDiv)
