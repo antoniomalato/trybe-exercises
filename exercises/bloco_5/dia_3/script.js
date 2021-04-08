@@ -47,3 +47,6 @@ function holiday(string) {
     buttons_container.appendChild(button);
 }
 holiday();
+
+//Implemente uma função que adicione ao botão "Feriados" um evento de "click" que muda a cor de fundo dos dias que possuem a classe "holiday"
+
