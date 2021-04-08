@@ -70,13 +70,3 @@ for (let index = 0; index < 3; index +=1) {
 
 } 
 
-// Passo 1 
-
-const title = document.getElementsByClassName('h1')[0];
-title.className = 'title';
-
-
-// Passo 3
-
-const removerDiv = document.getElementsByClassName('left-content')[0];
-div.removeChild(removerDiv)
