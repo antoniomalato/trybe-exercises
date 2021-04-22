@@ -21,7 +21,7 @@
       </label>
       <br>
       <label for="input-cpf">CPF:
-        <input type="text" maxlength="11" required name="cpf" id="input-cpf" placeholder="Digite seu cpf">
+        <input type="text" maxlength="11" required name="cpf" id="input-cpf" placeholder="xxx.xxx.xxx-00">
       </label>
       <br>
       <label for="input-adress">Endereço:
@@ -33,7 +33,7 @@
       </label>
       <br>
       <label for="input-state">Estado:
-        <select name="state" id="input-state" required></select>
+        <select name="state" id="input-state" value="" required></select>
       </label>
       <br>
       <label for="input-house">
@@ -60,9 +60,12 @@
       </label>
       <br>
       <label for="input-data">Data de ínicio:
-        <input type="text" name="data" id="input-data">
+        <input type="text" name="data" id="input-data" value="">
       </label>
     </fieldset>
+
+    <button class="submit" type="button">Enviar</button>
+    <button class="clear" type="button">Limpar</button>
 
   </form>
   <script src="script.js"></script>
