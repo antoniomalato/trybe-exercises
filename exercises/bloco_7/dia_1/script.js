@@ -32,11 +32,31 @@ console.log(`Os números ${sort} se encontram de forma crescente`)
 //Exercício 1 / parte II
 
 const fatorial = number => {
-  let count = 1 ;
-  for(let index = 1; index < number; index += 1) {
+  let count = 1;
+  for (let index = 1; index < number; index += 1) {
     count *= index
   }
   return count
 }
 
 console.log(fatorial(6))
+
+//Exercício 2 / parte II
+
+
+const maiorPalavra = string => {
+  let palavras = string.split(' ');
+  let maior = 0;
+  let final = "";
+
+  for (let palavra of palavras){
+    if (palavra.length > maior) {
+      maior = palavra.length
+      final = palavra
+    }
+    
+  }
+  return final
+}
+
+console.log(maiorPalavra("Antônio foi no banheiro e não sabemos o que aconteceu"))
