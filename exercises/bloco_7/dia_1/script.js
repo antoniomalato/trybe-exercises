@@ -29,5 +29,14 @@ const sort = number();
 
 console.log(`Os números ${sort} se encontram de forma crescente`)
 
+//Exercício 1 / parte II
 
-console.log(oddsAndEvens);
+const fatorial = number => {
+  let count = 1 ;
+  for(let index = 1; index < number; index += 1) {
+    count *= index
+  }
+  return count
+}
+
+console.log(fatorial(6))
