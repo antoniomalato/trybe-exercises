@@ -1,4 +1,5 @@
-//Exercício 1
+/* //Exercício 1
+
 const testingScope = escopo => {
   if (escopo === true) {
     let ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
@@ -13,6 +14,7 @@ const testingScope = escopo => {
 testingScope(true);
 
 //Exercício 2
+
 const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 
 const number = () => {
@@ -60,3 +62,11 @@ const maiorPalavra = string => {
 }
 
 console.log(maiorPalavra("Antônio foi no banheiro e não sabemos o que aconteceu"))
+ */
+//Exercício 3 / parte II
+/* let clickCount = 0;
+let textToDisplay = document.getElementById('text');
+
+document.getElementById('button_test').addEventListener('click', () => textToDisplay.innerHTML = clickCount += 1)
+
+ */
