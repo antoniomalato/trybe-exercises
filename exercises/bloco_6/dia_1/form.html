@@ -2,53 +2,73 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 
 <body>
-    <form action="#" method="GET">
-        <fieldset>
-            <legend>Dados Pessoais</legend>
-            <label for="input-name">Nome Completo:
-                <input type="text" name="name" id="full-name" maxlength="40" required placeholder="Digite seu nome">
-            </label>
-            <br>
-            <label for="input-email">Email:
-                <input type="email" maxlength="50" required name="email" id="input-email"
-                    placeholder="Digite seu email">
-            </label>
-            <br>
-            <label for="input-cpf">CPF:
-                <input type="text" maxlength="11" required name="cpf" id="input-cpf" placeholder="Digite seu cpf">
-            </label>
-            <br>
-            <label for="input-adress">Endereço:
-                <input type="text" required id="input-adress" maxlength="200" placeholder="Digite seu endereço">
-            </label>
-            <br>
-            <label for="input-city">Cidade:
-                <input type="text" required id="input-city" maxlength="28" placeholder="Digite sua cidade">
-            </label>
-            <br>
-            <label for="input-state">Estado:
-                <select name="state" id="input-state" required></select>
-            </label>
-            <br>
-            <label for="input-house">
-                <input type="radio" name="radio" id="input-house" required checked value="house">Casa
-            </label>
-            <label for="input-apart">
-                <input type="radio" name="radio" id="input-apart" required value="apart">Apartamento
-            </label>
-        </fieldset>
+  <form action="#" method="GET">
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+      <label for="input-name">Nome Completo:
+        <input type="text" name="name" id="full-name" maxlength="40" required placeholder="Digite seu nome">
+      </label>
+      <br>
+      <label for="input-email">Email:
+        <input type="email" maxlength="50" required name="email" id="input-email" placeholder="Digite seu email">
+      </label>
+      <br>
+      <label for="input-cpf">CPF:
+        <input type="text" maxlength="11" required name="cpf" id="input-cpf" placeholder="xxx.xxx.xxx-00">
+      </label>
+      <br>
+      <label for="input-adress">Endereço:
+        <input type="text" required id="input-adress" maxlength="200" placeholder="Digite seu endereço">
+      </label>
+      <br>
+      <label for="input-city">Cidade:
+        <input type="text" required id="input-city" maxlength="28" placeholder="Digite sua cidade">
+      </label>
+      <br>
+      <label for="input-state">Estado:
+        <select name="state" id="input-state" value="" required></select>
+      </label>
+      <br>
+      <label for="input-house">
+        <input type="radio" name="radio" id="input-house" required checked value="house">Casa
+      </label>
+      <label for="input-apart">
+        <input type="radio" name="radio" id="input-apart" required value="apart">Apartamento
+      </label>
+    </fieldset>
 
+    <fieldset>
+      <label for="input-summary">Resumo de currículo:
+        <br>
+        <textarea name="text" id="input-summary" maxlength="1000" cols="30" rows="10"
+          placeholder="Digite seu texto aqui" required></textarea>
+      </label>
+      <br>
+      <label for="input-role">Função:
+        <input type="text" id="input-role" maxlength="40" name="role" required placeholder="Digite sua função">
+      </label>
+      <br>
+      <label for="input-description">Descrição do cargo:
+        <input type="text" id="input-description" name="description" required maxlength="500">
+      </label>
+      <br>
+      <label for="input-data">Data de ínicio:
+        <input type="text" name="data" id="input-data" value="">
+      </label>
+    </fieldset>
 
+    <button class="submit" type="button">Enviar</button>
+    <button class="clear" type="button">Limpar</button>
 
-    </form>
-    <script src="script.js"></script>
+  </form>
+  <script src="script.js"></script>
 </body>
 
 </html>
