@@ -80,7 +80,11 @@ const addItem = (obj, key, value) => {
 
 console.log(addItem(lesson2, 'turno', 'noite'))
 
+const showObj = (obj) => { Object.keys(obj) }
 
+console.log(showObj(lesson1));
+
+const showParam = (obj) => {Object.keys(obj)}
 
 
 /*
