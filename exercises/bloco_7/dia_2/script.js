@@ -102,7 +102,7 @@ const showStudents = (obj) => {
   let total = 0;
   let array = Object.keys(obj);
 
-  for(let index = 0; index < array.length; index += 1) {
+  for (let index = 0; index < array.length; index += 1) {
     let count = array[index];
     total += obj[count].numeroEstudantes
   }
@@ -112,7 +112,17 @@ const showStudents = (obj) => {
 console.log(showStudents(allLessons));
 
 
-const valueFuc = (obj, number) => { Object.values(obj)[number];
-  console.log(valueFuc(allLessons))
+const valueFuc = (obj, number) => {
+  Object.values(obj)[number];
+  console.log(valueFuc())
 }
 
+const oddOrPair = (obj, key, value) => {
+  const arr = Object.entries(obj);
+  let isEqual = false;
+  for (let index in arr) {
+    if (arr[index][0] === key && arr[index][1] === value) isEqual = true;
+  }
+  return isEqual;
+};
+console.log(oddOrPair(lesson2, 'professor', 'Carlos'));
