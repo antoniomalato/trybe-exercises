@@ -84,7 +84,12 @@ const showObj = (obj) => { Object.keys(obj) }
 
 console.log(showObj(lesson1));
 
-const showParam = (obj) => {Object.keys(obj)}
+const showParam = (obj) => {
+  let comprimento = Object.keys(obj)
+  return comprimento.length
+}
+console.log(showParam(lesson1))
+
 
 
 /*
