@@ -96,9 +96,21 @@ console.log(showresult(lesson1));
 
 
 
-const allLessons =  Object.assign({}, {lesson1, lesson2, lesson3});
+const allLessons = Object.assign({}, { lesson1, lesson2, lesson3 });
 
-console.table(allLessons);
+const showStudents = (obj) => {
+  let total = 0;
+  let array = Object.keys(obj);
+
+  for(let index = 0; index < array.length; index += 1) {
+    let count = array[index];
+    total += obj[count].numeroEstudantes
+  }
+  return total
+}
+
+console.log(showStudents(allLessons));
+
 
 /*
 1-Crie uma função para adicionar o turno da manhã na lesson2 . Essa função deve possuir três parâmetros, sendo eles: o objeto a ser modificado, a chave que deverá ser adicionada e o valor dela.
