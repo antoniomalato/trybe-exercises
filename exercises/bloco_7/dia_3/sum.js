@@ -12,3 +12,8 @@ function sum(a, b) {
 
 assert.strictEqual(sum(4, 5), 9, '4 + 5 = 9');
 assert.strictEqual(sum(0, 0), 0, 'O retorno precisa ser 0');
+assert.throws(() => {sum(4, '5'); /^Error: parameters must be numbers/})
+assert.strictEqual(sum(4, '5'), 9 ,)
+//
+//assert.throws(() => {division(10, 0); /^Error: parameter y must not be 0$/})
+//
