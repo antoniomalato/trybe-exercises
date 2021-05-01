@@ -15,4 +15,8 @@ assert.strictEqual(typeof myRemove, 'function');
 assert.deepStrictEqual(myRemove([1, 2, 3, 4], 3), [1, 2, 4]);
 assert.notDeepStrictEqual(myRemove([1, 2, 3, 4], 3), [1, 2, 3, 4]);
 
-assert.deepStrictEqual(myRemove([1, 2, 3, 4, 5], 5), [1, 2, 3, 4])
+const numberVerify = [5, 6, 7, 8];
+myRemove(numberVerify, 5)
+assert.deepStrictEqual(numberVerify, [5, 6, 7, 8]);
+
+assert.deepStrictEqual(myRemove([1, 2, 3, 4], 5), [1, 2, 3, 4]);
