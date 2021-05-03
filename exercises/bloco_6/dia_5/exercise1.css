@@ -1,0 +1,53 @@
+body {
+  margin: 20px;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.6em;
+}
+
+h2 {
+  font-size: 1.6em;
+  text-align: center;
+}
+p {
+  font-size: 1.2em;
+}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  text-align: center;
+  margin: 0;
+  padding: 15px;
+}
+
+ /**Faça o tamanho da fonte ser maior;
+Faça o tamanho da fonte dos elementos h1 ser menor;
+Aumente o espaçamento entre as figuras;
+Adicione um pouco de margin na página.
+/
+
+*/ 
+@media screen and (min-width:800px) {
+  figure {
+  }
+  img {
+
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  p{
+    font-size: 1.5em;
+  }
+  
+}
