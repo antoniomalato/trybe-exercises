@@ -64,9 +64,6 @@ const books = [
   },
 ];
 
-// const allNames = () => books.reduce((acumulator, value) => 
-
-
 const reduceNames = (acc, book, index, array) => {
   if (index === array.length - 1) return `${acc} ${book.author.name}.`;
   return `${acc} ${book.author.name},`;
